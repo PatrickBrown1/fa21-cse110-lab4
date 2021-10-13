@@ -1,0 +1,2 @@
+1. The bug here is that the values, num1 and num2, are getting read as strings from their respective input fields. Therefore, when we add them together into result, we are doing string concatenation not addition. This would give us the resulting string `${num1}${num2}`, which is what is getting outputted.
+2. The fix here would be to convert num1 and num2 into numbers before doing the addition. 

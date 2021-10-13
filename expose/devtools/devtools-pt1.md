@@ -14,7 +14,7 @@ expose.js
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36
 
 6. In the response, what type of server did it come from?
-Github.com
+A FeatureCollection server
 
 7. When was the file last modified?
 Tue, 12 Oct 2021 18:38:02 GMT
