@@ -29,3 +29,33 @@
         student['Favorite Teacher'].name
     E. Access the first index in the array of the courseLoad property of the student object
         student.courseLoad[0]
+
+13. Arithmetic
+    ‘3’ + 2 = '32' because 2 maps to it's string representation, '2', and the + represents string concatenation
+    ‘3’ - 2 = 1, '3' gets converted to a number as the minus represents a mathematical function
+    3 + null = 3, null turns into a 0 in mathematical functions
+    ‘3’ + null = '3null', null converts to 'null' during string concatenation
+    true + 3 = 4, true converts to 1 during arithmetic
+    false + null = 0, because neither of these values are strings, this gets treated as arithmetic addition, where false and null both convert to 0 
+    '3' + undefined = '3undefined', because '3' is a string we are doing string concatenation, and undefined turns into 'undefined'
+    '3' - undefined = NaN, we have a - so we must be doing arithmetic, so '3' converts to 3 and undefined converts to NaN, so we always get NaN.
+
+14. Comparison
+    ‘2’ > 1 = True. When comparing different types, js converts all of the types to integers, so '2' converts to 2, making this statement true.
+    ‘2’ < ‘12’ = False. When comparing strings, we compare from left to right. Because the first character of '2' is greater than the first of '12', '2' > '12'
+    2 == ‘2’ = True. '2' converts to an integer
+    2 === ‘2’ = False. === compares without converting types. So 2 is not the same as '2' because they are different types.
+    true == 2 = False. true is equivalent to 1 when converted to an integer 
+    true === Boolean(2) = true. Any non-zero integer converted to an integer becomes true. So Boolean(2) becomes true, and now both sides are the same type and value.
+
+15. The == and === operators differ in one major way. The == operator will attempt to convert the two values to be the same type (number if they are different), and then compare the two values. The === operator on the otherhand will not even attempt to convert the types. So if you are comparing two values of different types like '2' and 2, '2' === 2 will always return false because they are different types, but '2' == 2 will convert '2' to 2, and then 2 == 2 will be true.
+
+17. This function returns [2,4,6].doSomething takes in a variable and returns that value multiplied by two. modifyArray creates a new array, pushes the result of callback with each value of the input array into this new array, and returns the new array. Combining these two functions, modifyArray([1,2,3], doSomething) returns [2,4,6] because it returns a copy of the old array where every value is multiplied by 2.
+
+19. 
+    1
+    4
+    3
+    2
+
+This is because the timeouts take longer to execute thant he regular console.logs. So 1 will execute first, then 4 (because we are traveling from top to bottom). Then 3 will execute because it has a timer of 0, and 2 will execute last 1s after the start of the program.
