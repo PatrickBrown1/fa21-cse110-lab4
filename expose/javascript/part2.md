@@ -18,3 +18,14 @@
 9. Line 11 will error out because i is initialized with the let keyword within the for loop. This means it cannot be accessed from outside of the for loop, and cannot be accessed from line 11.
 10. Line 11 will print 3. The length variable is initialized to the length of prices, which is 3. We never attempt to reassign it, so it does not error.
 11. It will return [50, 100, 150]. We get the correct answer even though discounted is initialized with the const keyword. This is because the const keyword just makes sure that the reference of the variable never changes, however the value of the variable can change. Therefore, we can correctly push values into the array, and get the discounted values of 100, 200 and 300 in order, which are [50, 100, 150].
+12. 
+    A. Accessing the value of the name property in the student object
+        student.name
+    B. Accessing the value of the Grad Year property in the student object
+        student['Grad Year']
+    C. Calling the function for the greeting property in the student object
+        student['greeting']()
+    D. Accessing the name property of the object in the Favorite Teacher property in student
+        student['Favorite Teacher'].name
+    E. Access the first index in the array of the courseLoad property of the student object
+        student.courseLoad[0]
